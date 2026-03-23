@@ -1,0 +1,56 @@
+add_newline = true
+
+format = """
+$custom\
+$directory\
+$character
+"""
+
+right_format = """
+$cmd_duration\
+$time
+"""
+
+palette = "catppuccin_custom"
+
+[palettes.catppuccin_custom]
+bg = "#1e1e2e"
+fg = "#cdd6f4"
+lavender = "#b4befe"
+mauve = "#cba6f7"
+blue = "#89b4fa"
+green = "#a6e3a1"
+yellow = "#f9e2af"
+pink = "#f5c2e7"
+surface0 = "#313244"
+surface1 = "#45475a"
+
+[custom.left_block]
+command = "printf ''"
+when = "true"
+format = "[](fg:mauve)[  $output  ](bg:mauve fg:bg bold)[](fg:mauve bg:surface0)"
+shell = ["bash", "--noprofile", "--norc"]
+
+[directory]
+style = "bg:surface0 fg:fg"
+format = "[  $path ]($style)[](fg:surface0)"
+truncation_length = 1
+truncate_to_repo = false
+home_symbol = "~"
+read_only = " "
+read_only_style = "bg:surface0 fg:yellow"
+
+[character]
+success_symbol = "[ ─❯](fg:mauve)"
+error_symbol = "[ ─❯](fg:red)"
+vimcmd_symbol = "[ ─❮](fg:green)"
+
+[cmd_duration]
+min_time = 0
+format = "[](fg:surface0)[ $duration](bg:surface0 fg:fg)[](fg:surface0)"
+show_milliseconds = false
+
+[time]
+disabled = false
+time_format = "%H:%M:%S"
+format = "[](fg:lavender)[$time](bg:lavender fg:bg)[](fg:lavender)"

@@ -1,0 +1,78 @@
+{
+  "logo": {
+    "type": "builtin",
+    "source": "arch",
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+
+  "display": {
+    "separator": "  ",
+    "key": {
+      "width": 12
+    }
+  },
+
+  "modules": [
+    "break",
+    {
+      "type": "title"
+    },
+
+    {
+      "type": "os",
+      "key": "OS"
+    },
+    {
+      "type": "packages",
+      "key": "Packages"
+    },
+    {
+      "type": "cpu",
+      "key": "CPU"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU"
+    },
+    {
+      "type": "memory",
+      "key": "Memory"
+    },
+
+    "break",
+
+    {
+      "type": "display",
+      "key": "Display"
+    },
+    {
+      "type": "wm",
+      "key": "WM"
+    },
+    {
+      "type": "terminal",
+      "key": "Terminal"
+    },
+    {
+      "type": "uptime",
+      "key": "Uptime"
+    },
+    {
+      "type": "disk",
+      "key": "Disk"
+    },
+
+    "break",
+
+    
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    }
+  ]
+}
